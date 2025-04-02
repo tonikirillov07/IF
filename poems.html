@@ -25,7 +25,7 @@
                 Стихи
             </button>
         </form>
-        <form action="poems.html" method="GET" class="main-button-form">
+        <form action="biography.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button" >
                 <img src="assets/images/biography.png" alt="Biography">
                 Биография
@@ -41,16 +41,16 @@
 </header>
 <div class="main-content">
     <div class="poems-block">
-        <label for="poems"></label><select class="poems-dropdown" id="poems">
-            <option value="1">Имя деда</option>
-            <option value="2">На весенних полях...</option>
-            <option value="3">Поклонимся живым и павшим!</option>
-            <option value="4">Год рожденья 21-й…(1921-й)</option>
-            <option value="5">Фронтовик</option>
-            <option value="6">Только в небе тучи брызнут в стороны…</option>
-            <option value="7">Военным вдовам</option>
-            <option value="8">Парад победы</option>
-            <option value="9">Спаситель Мира</option>
+        <label for="poems"></label><select class="dropdown" id="poems">
+            <option>Имя деда</option>
+            <option>На весенних полях...</option>
+            <option>Поклонимся живым и павшим!</option>
+            <option>Год рожденья 21-й…(1921-й)</option>
+            <option>Фронтовик</option>
+            <option>Только в небе тучи брызнут в стороны…</option>
+            <option>Военным вдовам</option>
+            <option>Парад победы</option>
+            <option>Спаситель Мира</option>
         </select>
     </div>
 
@@ -60,10 +60,10 @@
 
         <hr style="width: 97%;">
 
-        <p class="title" style="font-size: 15px;" id="poemText"></p>
+        <p class="content-text" id="poemText"></p>
     </div>
 </div>
 
-<script src="assets/js/poems.js"></script>
+<script type="module" src="assets/js/Poems.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@
                 Стихи
             </button>
         </form>
-        <form action="poems.html" method="GET" class="main-button-form">
+        <form action="biography.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button" >
                 <img src="assets/images/biography.png" alt="Biography">
                 Биография
@@ -39,5 +39,23 @@
         </form>
     </div>
 </header>
+<div class="main-content">
+    <div class="poems-block">
+        <label for="biographyEpochs"></label><select class="dropdown" id="biographyEpochs">
+            <option>Довоенное время</option>
+            <option>Дорогами войны</option>
+            <option>Послевоенная жизнь</option>
+        </select>
+    </div>
+
+    <div class="biography-block" style="margin: 35px;">
+        <h1 class="title" id="biographyTitle" style="color: white; text-align: center">Biography Epoch Title</h1>
+        <hr style="width: 97%;">
+
+        <p class="content-text" id="biographyText" style="color: white;"></p>
+    </div>
+</div>
+
+<script type="module" src="assets/js/Biography.js"></script>
 </body>
 </html>

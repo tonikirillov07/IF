@@ -91,6 +91,8 @@ body{
     display: flex;
     justify-content: end;
     max-height: 202px;
+
+    overflow-y: auto;
 }
 
 .main-content{
@@ -127,6 +129,16 @@ body{
     color: rgb(219, 219, 219);
     margin-right: 15px;
     font-family: "Inter", sans-serif;
+
+    user-select: none;
+}
+
+.content-text{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(219, 219, 219);
+    margin-right: 15px;
+    font-family: "Inter", sans-serif;
 }
 
 .epigraph-block{
@@ -146,7 +158,7 @@ body{
     margin-right: 35px;
 }
 
-.poems-dropdown{
+.dropdown{
     font-family: "Inter", sans-serif;
     font-style: italic;
     padding: 5px;
@@ -154,7 +166,7 @@ body{
     font-size: 16px;
 }
 
-.poems-dropdown:hover{
+.dropdown:hover{
     animation: border 400ms ease-in-out forwards;
     color: blue;
 }
