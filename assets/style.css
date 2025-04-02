@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @keyframes borderBottom {
-    from{
-        border-bottom: solid transparent;
-    }
+    from{border-bottom: solid transparent;}
 
-    to{
-        border-bottom: 1mm solid red;
-    }
+    to{border-bottom: 1mm solid red;}
+}
+
+@keyframes border {
+    from{border: solid transparent;}
+
+    to{border: 1mm solid red;}
 }
 
 @keyframes slideDown {
@@ -88,6 +90,35 @@ body{
     width: 100%;
     display: flex;
     justify-content: end;
+    max-height: 202px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    overflow-y: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    scroll-behavior: auto;
+}
+
+.poems-block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 402px;
+    border-radius: 14px;
+    overflow-y: auto;
+    min-width: 397px;
+
+    padding: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    background-color: rgba(11, 11, 11, 0.56);
+
+    animation: fadeOut 400ms ease-in-out forwards;
 }
 
 .title{
@@ -113,4 +144,22 @@ body{
     font-family: "Inter", sans-serif;
 
     margin-right: 35px;
+}
+
+.poems-dropdown{
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 14px;
+    font-size: 16px;
+}
+
+.poems-dropdown:hover{
+    animation: border 400ms ease-in-out forwards;
+    color: blue;
+}
+
+.main-button-form{
+    display: flex;
+    justify-content: center;
 }

@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/images/icon/favicon.png" type="image/x-icon" />
-    <title>Герой войны</title>
+    <title>Стихи</title>
 </head>
 <body>
 <header class="main-header">
     <div class="header-parent">
-        <h1 class="title">Главная</h1>
+        <h1 class="title">Стихи</h1>
         <form style="margin-left: auto;" action="index.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button">
                 <img src="assets/images/home.png" alt="Home">
@@ -25,7 +25,7 @@
                 Стихи
             </button>
         </form>
-        <form action="biography.html" method="GET" class="main-button-form">
+        <form action="poems.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button" >
                 <img src="assets/images/biography.png" alt="Biography">
                 Биография
@@ -39,29 +39,31 @@
         </form>
     </div>
 </header>
-
-<div class="short-biography-block">
-    <div style="width: 100%;">
-        <h1>Photo here</h1>
+<div class="main-content">
+    <div class="poems-block">
+        <label for="poems"></label><select class="poems-dropdown" id="poems">
+            <option value="1">Имя деда</option>
+            <option value="2">На весенних полях...</option>
+            <option value="3">Поклонимся живым и павшим!</option>
+            <option value="4">Год рожденья 21-й…(1921-й)</option>
+            <option value="5">Фронтовик</option>
+            <option value="6">Только в небе тучи брызнут в стороны…</option>
+            <option value="7">Военным вдовам</option>
+            <option value="8">Парад победы</option>
+            <option value="9">Спаситель Мира</option>
+        </select>
     </div>
-    <div style="width: 100%;">
-        <div class="short-biography-text-block">
-            <h1 class="title">Смирнов Михаил Николаевич</h1>
-        </div>
-        <div class="short-biography-text-block" style="margin-top: -23px;">
-            <h3 class="title" style="font-size: 20px;">1900-1993</h3>
-        </div>
-        <div class="short-biography-text-block">
-            <h4 class="title" style="font-size: 16px; overflow-y: auto;">
 
+    <div class="poems-block" style="margin: 35px;">
+        <h1 class="title" id="poemTitle">Poem Title</h1>
+        <h4 class="title" style="font-size: 17px; margin-top: -5px">Автор: <i><u>Александр Смирнов</u></i></h4>
 
-            </h4>
-        </div>
+        <hr style="width: 97%;">
+
+        <p class="title" style="font-size: 15px;" id="poemText"></p>
     </div>
 </div>
-<div class="epigraph-block">
-    <h4 class="epigraph-text">«В человеке слились воедино
-        подвиг ратный и трудовой»</h4>
-</div>
+
+<script src="assets/js/poems.js"></script>
 </body>
 </html>
