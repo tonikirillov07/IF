@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@keyframes borderBottom {
+    from{
+        border-bottom: solid transparent;
+    }
+
+    to{
+        border-bottom: 1mm solid red;
+    }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to   { transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    overflow-y: auto;
+
+    height: 100vh;
+
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header{
+    background-color: rgba(40, 40, 40, 0.52);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    display: block;
+    position: relative;
+    padding: 15px;
+
+    animation: slideDown 300ms ease-in-out forwards;
+}
+
+.header-parent{
+    display: flex;
+    gap: 10px;
+}
+
+.main-button{
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+
+    cursor: pointer;
+}
+
+.main-button:hover{
+    animation: borderBottom 400ms ease-in-out forwards;
+}
+
+.short-biography-block{
+    display: flex;
+    background-color: rgba(11, 11, 11, 0.56);
+    margin: 35px;
+
+    border-radius: 15px;
+    border-width: 0;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    animation: fadeOut 400ms ease-in-out forwards;
+}
+
+.short-biography-text-block{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(219, 219, 219);
+    margin-right: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.epigraph-block{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.epigraph-text{
+    color: white;
+    font-style: italic;
+
+    font-family: "Inter", sans-serif;
+
+    margin-right: 35px;
+}
