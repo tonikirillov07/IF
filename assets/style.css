@@ -31,6 +31,10 @@
     animation: slideUp 200ms ease-in-out forwards;
 }
 
+.fade-out-animated-class{
+    animation: fadeOut 200ms ease-in-out forwards;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -87,6 +91,7 @@ body{
     display: flex;
     background-color: rgba(11, 11, 11, 0.56);
     margin: 35px;
+    max-height: 60%;
 
     border-radius: 15px;
     border-width: 0;
@@ -99,7 +104,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: end;
-    max-height: 202px;
+    max-height: 320px;
 
     overflow-y: auto;
 }
@@ -169,6 +174,7 @@ body{
     font-family: "Inter", sans-serif;
 
     margin-right: 35px;
+    margin-left: auto;
 }
 
 .dropdown{
@@ -187,4 +193,30 @@ body{
 .main-button-form{
     display: flex;
     justify-content: center;
+}
+
+.portrait{
+    margin: 15px;
+    border-radius: 15px;
+}
+
+div.scroll-container {
+    background-color: rgba(11, 11, 11, 0.56);
+    border-radius: 14px;
+    overflow: auto;
+    white-space: nowrap;
+
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    border-radius: 14px;
 }

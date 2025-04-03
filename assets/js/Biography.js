@@ -7,10 +7,5 @@ const biographyText = document.getElementById("biographyText");
 biographyEpochsDropdown.addEventListener("change", showBiography);
 
 function showBiography() {
-    const selectedOption = biographyEpochsDropdown.options[biographyEpochsDropdown.selectedIndex];
-
-    biographyTitle.textContent = selectedOption.text;
-
-    let poemNumber = selectedOption.index + 1;
-    Utils.showPoemTextFromFile(poemNumber, "./assets/text/biography/", biographyText).then(() => {});
+    Utils.showDropdownContent(biographyEpochsDropdown, "./assets/text/biography/", biographyText, biographyTitle);
 }

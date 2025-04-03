@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фотографии</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/images/icon/favicon.png" type="image/x-icon" />
+</head>
+<body>
+<header class="main-header">
+  <div class="header-parent">
+    <h1 class="title">Фотографии</h1>
+    <form style="margin-left: auto;" action="index.html" method="GET" class="main-button-form">
+      <button type="submit" class="main-button">
+        <img src="assets/images/home.png" alt="Home">
+        Главная
+      </button>
+    </form>
+    <form action="poems.html" method="GET" class="main-button-form">
+      <button type="submit" class="main-button" >
+        <img src="assets/images/poems.png" alt="Poem">
+        Стихи
+      </button>
+    </form>
+    <form action="biography.html" method="GET" class="main-button-form">
+      <button type="submit" class="main-button" >
+        <img src="assets/images/biography.png" alt="Biography">
+        Биография
+      </button>
+    </form>
+    <form action="soldierBook.html" method="GET" class="main-button-form">
+      <button type="submit" class="main-button" >
+        <img src="assets/images/book.png" alt="Biography">
+        Солдатская книжка
+      </button>
+    </form>
+    <form action="photos.html" method="GET" class="main-button-form">
+      <button type="submit" class="main-button" >
+        <img src="assets/images/photos.png" alt="Photos">
+        Фотографии
+      </button>
+    </form>
+  </div>
+</header>
+<div class="main-content">
+  <div class="poems-block">
+    <label for="photos" class="content-text" style="margin-bottom: 10px;">Тип фотографий: </label><select class="dropdown" id="photos">
+    <option>Военные</option>
+    <option>Семейные</option>
+    <option>Армейские Документы</option>
+    <option>Награды</option>
+  </select>
+  </div>
+
+  <div class="scroll-container" id="gallery"></div>
+</div>
+
+<script type="module" src="assets/js/Photos.js"></script>
+</body>
+</html>
