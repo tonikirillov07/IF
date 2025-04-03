@@ -12,7 +12,11 @@
 <body>
 <header class="main-header">
     <div class="header-parent">
-        <h1 class="title">Главная</h1>
+        <div>
+            <h1 class="title">Смирнов Михаил Николаевич</h1>
+            <h4 class="content-text" style="font-size: 18px; margin-left: 5px;">1914-2005</h4>
+        </div>
+
         <form style="margin-left: auto;" action="index.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button">
                 <img src="assets/images/home.png" alt="Home">
@@ -31,7 +35,7 @@
                 Биография
             </button>
         </form>
-        <form action="poems.html" method="GET" class="main-button-form">
+        <form action="soldierBook.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button" >
                 <img src="assets/images/book.png" alt="Biography">
                 Солдатская книжка
@@ -44,23 +48,22 @@
     <div style="width: 100%;">
         <h1>Photo here</h1>
     </div>
-    <div style="width: 100%;">
+    <div>
+        <h4 class="epigraph-text">«В человеке слились воедино
+            подвиг ратный и трудовой»</h4>
         <div class="short-biography-text-block">
-            <h1 class="title">Смирнов Михаил Николаевич</h1>
-        </div>
-        <div class="short-biography-text-block" style="margin-top: -23px;">
-            <h3 class="title" style="font-size: 20px;">1900-1993</h3>
-        </div>
-        <div class="short-biography-text-block">
-            <h4 class="content-text">
+            <h4 class="content-text" id="shortBiographyText">
 
             </h4>
         </div>
     </div>
 </div>
 <div class="epigraph-block">
-    <h4 class="epigraph-text">«В человеке слились воедино
-        подвиг ратный и трудовой»</h4>
+    <noscript>
+        <h5 class="content-text" style="color: red; margin-right: auto; margin-left: 15px;">Включите JavaScript в вашем браузере</h5>
+    </noscript>
 </div>
+
+<script type="module" src="assets/js/Main.js"></script>
 </body>
 </html>

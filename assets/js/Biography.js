@@ -1,12 +1,12 @@
 import Utils from "./Utils.js"
 
-let biographyEpochsDropdown = document.getElementById("biographyEpochs");
-let biographyTitle = document.getElementById("biographyTitle");
-let biographyText = document.getElementById("biographyText");
+const biographyEpochsDropdown = document.getElementById("biographyEpochs");
+const biographyTitle = document.getElementById("biographyTitle");
+const biographyText = document.getElementById("biographyText");
 
-biographyEpochsDropdown.addEventListener("change", showPoem);
+biographyEpochsDropdown.addEventListener("change", showBiography);
 
-function showPoem() {
+function showBiography() {
     const selectedOption = biographyEpochsDropdown.options[biographyEpochsDropdown.selectedIndex];
 
     biographyTitle.textContent = selectedOption.text;

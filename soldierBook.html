@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Биография</title>
+    <title>Солдатская книжка</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/images/icon/favicon.png" type="image/x-icon" />
 </head>
 <body>
 <header class="main-header">
     <div class="header-parent">
-        <h1 class="title">Биография</h1>
+        <h1 class="title">Солдатская книжка</h1>
         <form style="margin-left: auto;" action="index.html" method="GET" class="main-button-form">
             <button type="submit" class="main-button">
                 <img src="assets/images/home.png" alt="Home">
@@ -39,23 +39,31 @@
         </form>
     </div>
 </header>
-<div class="main-content">
-    <div class="poems-block">
-        <label for="biographyEpochs"></label><select class="dropdown" id="biographyEpochs">
-            <option>Довоенное время</option>
-            <option>Дорогами войны</option>
-            <option>Послевоенная жизнь</option>
+
+<div class="main-content" style="display: flex; flex-direction: row; align-items: start;">
+    <div class="poems-block" style="margin-left: 20px;">
+        <label for="dates" class="content-text">Даты: </label><select class="dropdown" id="dates" style="margin-top: 5px;">
+            <option>27.08.1941 - 01.08.1943</option>
+            <option>01.08.1942 - 01.08.1943</option>
+        </select>
+
+        <label for="awards" class="content-text" style="margin-top: 10px;">Награды: </label><select class="dropdown" id="awards" style="margin-top: 5px;">
+            <option>От января 1944 года</option>
+            <option>От июля 1944 года</option>
+            <option>От ноября 1944 года</option>
+            <option>От июня 1945 года</option>
         </select>
     </div>
 
-    <div class="biography-block" style="margin: 35px; background-color: rgba(40, 40, 40, 0.52); border-radius: 14px; padding: 20px; overflow-y: auto;">
-        <h1 class="title" id="biographyTitle" style="color: white; text-align: center">Biography Epoch Title</h1>
+    <div class="poems-block" style="margin-left: auto; margin-right: 20px;">
+        <h1 class="title" id="title">Title</h1>
+
         <hr style="width: 97%;">
 
-        <p class="content-text" id="biographyText" style="color: white; text-align: justify;"></p>
+        <p class="content-text" id="text"></p>
     </div>
 </div>
 
-<script type="module" src="assets/js/Biography.js"></script>
+<script type="module" src="assets/js/SoldierBook.js"></script>
 </body>
 </html>
